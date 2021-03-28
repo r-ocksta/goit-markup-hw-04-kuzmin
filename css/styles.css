@@ -116,6 +116,17 @@ img {
   color: #2196f3;
   margin-right: 50px;
 }
+.mail-icon {
+  width: 16px;height: 12px;
+  align-items: baseline;
+}
+.tel-icon
+{
+  width: 16px;height: 12px;
+  align-items: baseline;
+}
+
+
 .tel {
   font-weight: 500;
   font-size: 14px;
@@ -163,6 +174,7 @@ img {
   padding-left: 700px;
  align-items: center;
 }
+
 /*specs*/
 .specs-section {
   padding-top: 94px;
@@ -171,18 +183,43 @@ img {
   display: flex;
   justify-content: center;
 }
-.specs-section .item {
+.specs-section-item::before {
+  display: block;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  content: ('');
+  height: 120px;
+  background-color: var(--ourteam-bgc-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specs-section-item:nth-child(1)::before {
+  background-image: url(../images/icons/symbol-defs.svg#icon-radar);
+}
+.specs-section-item:nth-child(2)::before {
+  background-image: url(../images/icons/symbol-defs.svg#icon-sat);
+}  
+.specs-section-item:nth-child(3)::before {
+  background-image: url(../images/icons/symbol-defs.svg#icon-komp);
+}    
+.specs-section-item:nth-child(4)::before {
+  background-image: url(../images/icons/symbol-defs.svg#icon-spaceman);
+}  
+
+
+
+.specs-section-item {
 align-self: center;
 margin-left: 30px; 
 }
-.specs-section .item :first-child {
+.specs-section-item :first-child {
   margin-left: 0;
 } 
 .specs-section-text {
   width: 270px;
   height: 75px;
 }
-
 
 .specs-section-title {
   color: var(--titles-text-color);
@@ -195,6 +232,10 @@ margin-left: 30px;
   font-size: 14px;
   line-height: 1.71;
 }
+
+
+
+
 .engagement-title {
   color: var(--titles-text-color);
   font-weight: 700;
@@ -204,18 +245,7 @@ margin-left: 30px;
   padding-top: 94px;
   padding-bottom: 50px;
 }
- .radarsvg {
- padding-top: 25px;
- padding-left: 102.34px;
- padding-bottom: 25px;
- padding-right: 102.34px;
- background-color: #F5F4FA;
- Corner radius: 4px;
- X: 2.34px
- Y: 0px
-width: 65.32px
-height: 70px
-  }
+ 
 .engagement {
   display: flex;
   justify-content: center;
@@ -318,6 +348,7 @@ margin-left: 0;
   display: flex;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  width: 170px;
   height: 90px;
   justify-content: center;
   align-items: center;
