@@ -103,6 +103,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color) ;
+  
 }
 .contact:hover,
 .contact:focus {
@@ -110,9 +111,10 @@ img {
 }
 .icon-contacts {
   margin-right: 10px;
-  fill: currentColor;
+  fill: var(--primary-text-color);
   align-items: center;
 }
+
 
 .nav-list {
   display: flex;
@@ -237,7 +239,7 @@ margin-left: 30px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
  
 .engagement {
@@ -266,6 +268,7 @@ margin-left: 30px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-title {
@@ -296,6 +299,7 @@ background-color: #ffffff;
 .team .lists {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .team .item {
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -331,7 +335,7 @@ margin-left: 0;
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 94px;
+  margin-bottom: 50px;
   
 }
 
@@ -434,6 +438,7 @@ display: block;
 }
 .footer-data {
   margin-left: 70px;
+  margin-right: 70px;
 }
 
 .address {
@@ -499,7 +504,7 @@ border: azure;
   color: var(--primary-text-color);
 }
 .filter-button  {
-padding-top: 94px;
+ padding-top: 94px;
   margin-bottom: 50px;
 
   border-top-width: 1px;
